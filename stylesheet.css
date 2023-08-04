@@ -1,0 +1,70 @@
+body{
+    background-image: linear-gradient(135deg, #9604e5, #f507b1);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#title_text{
+    margin-top: 10px;
+    font-size: 50px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+}
+.logo{
+    margin: auto;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    border: 0px;
+    outline: 0px;
+    position: fixed;
+}
+.chatbox{
+    max-width: 800px;
+    width:80%;
+    align-items: center;
+    margin: 50px auto 20px;
+    padding: 40px 20px;
+    background-color: antiquewhite;
+    height: 80vh;
+    overflow-y: auto;
+}
+.message{
+    padding: 12px;
+    max-width: 500px;
+    height: 15px;
+    width: 50%;
+    margin: 10px;
+    border-radius: 20px;
+    border: solid 2px aliceblue;
+}
+.user{
+    background-color: #f507b1;
+    float: right;
+}
+.other{
+    float: left;
+    background-color: #9604e5;
+}
+.send_button{
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    border: 0px;
+    padding: 0px;
+}
+#send_container{
+    text-align: center;
+    max-width: 850px;
+    width: 88%;
+    margin: 10px auto;
+    display: flex;
+}
+.send_message{
+    border-radius: 10px;
+    border: 0px;
+    background-color: aliceblue;
+    height: 45px;
+    width: 95%;
+    margin-right: 4px;
+    cursor: pointer;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hangout Hive</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+        <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+        <script defer src="client.js"></script>
+    </head>
+    <body>
+        <nav>
+            <img class="logo" src="Images/chat_logo.webp">
+        </nav>
+        <h1 id="title_text">Welcome to The Hangout Hive!!</h1>
+        <div class="chatbox">
+            <div class="message user"></div>
+            <div class="message other"></div>
+        </div>
+
+        <div class="send">
+            <form action="#" id="send_container">
+                <input class="send_message" id="message_input">
+                <button class="send_button" type="submit"><img src="Images/chat_logo.webp" class="send_button"></button>
+            </form>
+        </div>
+    </body>
+</html>
