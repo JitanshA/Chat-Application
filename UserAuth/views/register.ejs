@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+    <meta charset="UTf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(90deg, #833ab4, #f507b1);
+        }
+
+        h1 {
+            color: #f77737;
+            text-align: center;
+            font-size: 100px;
+        }
+
+        .container {
+            width: 80%;
+            height: 75vh;
+            max-width: 450px;
+            margin: 100px auto 0px;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+
+        form {
+            width: 70%;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            flex-flow: column;
+            margin: auto;
+        }
+
+        #email,
+        #password,
+        #name,
+        #register {
+            margin-bottom: 10px;
+            padding: 20px 20px;
+            font-size: larger;
+        }
+
+        #login {
+            background-color: aliceblue;
+            padding: 20px 20px;
+            width: 80%;
+            text-align: center;
+            margin: 0px auto;
+            max-width: 410px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <form action="/register" method="POST" id="details">
+            <input placeholder="Full Name" name="name" id="name">
+            <input placeholder="Enter your email" name="email" id="email" type="email">
+            <input name="password" placeholder="Password" id="password" type="password">
+
+            <!--Add a forgot your password feature here later on-->
+
+            <button name="register" type="submit" id="register">REGISTER</button>
+        </form>
+    </div>
+    <div id="login">
+        Already a member? <a>Login!</a>
+    </div>
+</body>
+
+</html>

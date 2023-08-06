@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-image: linear-gradient(90deg,#833ab4, #f507b1);
+            }
+            h1{
+                color: #f77737;
+                text-align: center;
+                font-size: 100px;
+            }
+            .container{
+                width:80%;
+                height: 70vh;
+                max-width: 450px;
+                margin:100px auto 0px;
+                background-color: antiquewhite;
+                text-align: center;
+            }
+            form{
+                width:70%;
+                display:flex;
+                align-content: center;
+                justify-content: center;
+                flex-flow: column;
+                margin: auto;
+            }
+            #email, #password,#login{
+                margin-bottom:10px;
+                padding:20px 20px;
+                font-size: larger;
+            }
+            #register{
+                background-color:aliceblue;
+                padding: 20px 20px;
+                width: 80%;
+                text-align: center;
+                margin: 0px auto;
+                max-width: 410px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Login</h1>
+            <form action="/login" method="POST" id="details">
+                <input placeholder="Enter your email" id="email" type="email" name="email">
+                <input type="password" placeholder="Password" id="password" name="password">
+
+                <!--Add a forgot your password feature here later on-->
+
+                <button type="submit" id="login" name="login">LOGIN</button>
+            </form>
+        </div>
+        <div id="register">
+            Not a member? <a>Signup today!</a>
+        </div>
+    </body>
+</html>
